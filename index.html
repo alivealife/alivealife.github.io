@@ -64,6 +64,56 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo-build" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/02/17/hexo-build/" class="article-date">
+  <time datetime="2020-02-17T07:52:35.000Z" itemprop="datePublished">2020-02-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/02/17/hexo-build/">Hexo 搭配 GitHub 部落格創建筆記</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>透過 npm 安裝 Hexo</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$npm</span> install <span class="literal">-g</span> hexo<span class="literal">-cli</span></span><br></pre></td></tr></table></figure>
+
+<p>安裝完成後初始化資料夾</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> init &lt;資料夾名稱&gt;</span><br></pre></td></tr></table></figure>
+
+<p>移至該資料夾</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$cd</span> &lt;資料夾名稱&gt;</span><br></pre></td></tr></table></figure>
+        
+          <p class="article-more-link">
+            <a href="/2020/02/17/hexo-build/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/02/17/hexo-build/" data-id="ck6q5ysd20000r0tw43dch8rk" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-JavaScript-note" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/02/17/JavaScript-note/" class="article-date">
@@ -86,8 +136,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <a id="more"></a>
-<ol>
+        <ol>
 <li><p>html 在渲染網頁時由上而下，逐行渲染，故 JS 載入的位置須注意是否要放在最後面，以確保載入時不會出錯。</p>
 </li>
 <li><p>JavaScript 是屬於單執行緒的程式語言，程式碼遇錯後會中斷不再繼續執行。</p>
@@ -95,36 +144,19 @@
 <li><p>可以使用 typeof( ) 來獲取資料的型態。</p>
 </li>
 <li><p>字串的數字相加會得到錯誤的結果(例：10 + 5 = 105)，但是相乘會正確(例：10 * 5 = 50)。</p>
-</li>
-<li><p>value 抓出來的是字串，如果要相加必須使用 parseInt( ) 來轉換成數字：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Num = <span class="built_in">parseInt</span>(<span class="built_in">document</span>.getElementById(Num).value);</span><br></pre></td></tr></table></figure></li>
-<li><p>i = i + 1 等同於 i += 1 等同於 i++。</p>
-</li>
-<li><p>縮短程式碼，如果會很常取得數值的話，可以定義一個變數來縮短程式，範例如下：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'eatWhat'</span>).textContent = <span class="string">'吃披薩'</span>; </span><br><span class="line"><span class="keyword">var</span> el = <span class="built_in">document</span>.getE1ementById(<span class="string">'eatwhat'</span>); </span><br><span class="line">el.textContent = <span class="string">'吃披薩'</span>;</span><br></pre></td></tr></table></figure>
-<p>可以將上方的程式修改為下方的樣式，可有效縮短程式碼，並使閱讀更容易</p>
-</li>
-<li><p>網頁座標<br>a. screen  是真的螢幕的解析度的座標點<br>b. PAGE  以整個網頁寬高為主<br>c. CLIENT 是以瀏覽器窗口</p>
-</li>
-<li><p>當 JS 呼叫陣列時，會將帶入的值轉為數字，但實務上還是轉成數字後再帶入會好點。<br>e.g.：<code>text[&#39;1&#39;]</code> 在呼叫時會轉變為 <code>text[1]</code> (將字串自動轉為數字)</p>
-</li>
-<li><p><code>window.history.forward()</code> 與 <code>window.history.back()</code> 的差別：<br><code>back()</code> = 瀏覽器上的回上一頁<br><code>forward()</code> = 瀏覽器上的到下一頁</p>
-</li>
-<li><p>HTTP 狀態(status)碼：</p>
-</li>
-</ol>
-<ul>
-<li>200：資料正確回傳</li>
-<li>404：資料讀取錯誤</li>
-<li>其他參考<a href="https://blog.miniasp.com/post/2009/01/16/Web-developer-should-know-about-HTTP-Status-Code" target="_blank" rel="noopener">https://blog.miniasp.com/post/2009/01/16/Web-developer-should-know-about-HTTP-Status-Code</a></li>
-</ul>
-
+        
+          <p class="article-more-link">
+            <a href="/2020/02/17/JavaScript-note/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
       <a data-url="http://yoursite.com/2020/02/17/JavaScript-note/" data-id="ck6q4uer90000v4twcolkaw7i" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JS/" rel="tag">JS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a></li></ul>
+
     </footer>
   </div>
   
@@ -191,9 +223,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/" rel="tag">JS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AD%86%E8%A8%98/" rel="tag">筆記</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/JS/" style="font-size: 10px;">JS</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 10px;">前端</a> <a href="/tags/%E7%AD%86%E8%A8%98/" style="font-size: 20px;">筆記</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -210,6 +256,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2020/02/17/hexo-build/">Hexo 搭配 GitHub 部落格創建筆記</a>
+          </li>
         
           <li>
             <a href="/2020/02/17/JavaScript-note/">JavaScript 學習紀錄</a>

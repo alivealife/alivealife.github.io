@@ -20,19 +20,22 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="前言本篇簡單的整理一下型別的筆記。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/02/17/hello-world/index.html">
+<meta property="og:title" content="JS - 型別">
+<meta property="og:url" content="http://yoursite.com/2020/03/17/JS-type/index.html">
 <meta property="og:site_name" content="前端學習筆記">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="前言本篇簡單的整理一下型別的筆記。">
 <meta property="og:locale" content="zh_TW">
-<meta property="article:published_time" content="2020-02-17T07:01:56.101Z">
-<meta property="article:modified_time" content="2020-02-17T07:01:56.101Z">
+<meta property="article:published_time" content="2020-03-17T06:24:13.000Z">
+<meta property="article:modified_time" content="2020-03-17T06:40:56.935Z">
 <meta property="article:author" content="Ian Hung">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="筆記">
+<meta property="article:tag" content="JS">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/02/17/hello-world/">
+<link rel="canonical" href="http://yoursite.com/2020/03/17/JS-type/">
 
 
 <script id="page-configurations">
@@ -44,7 +47,7 @@
   };
 </script>
 
-  <title>Hello World | 前端學習筆記</title>
+  <title>JS - 型別 | 前端學習筆記</title>
   
 
 
@@ -158,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/17/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/17/JS-type/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -171,7 +174,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          Hello World
+          JS - 型別
         </h2>
 
         <div class="post-meta">
@@ -180,8 +183,18 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               <span class="post-meta-item-text">發表於</span>
+              
 
-              <time title="創建時間：2020-02-17 15:01:56" itemprop="dateCreated datePublished" datetime="2020-02-17T15:01:56+08:00">2020-02-17</time>
+              <time title="創建時間：2020-03-17 14:24:13 / 修改時間：14:40:56" itemprop="dateCreated datePublished" datetime="2020-03-17T14:24:13+08:00">2020-03-17</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a>
+                </span>
             </span>
 
           
@@ -195,19 +208,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external nofollow noopener noreferrer">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external nofollow noopener noreferrer">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external nofollow noopener noreferrer">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external nofollow noopener noreferrer">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external nofollow noopener noreferrer">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external nofollow noopener noreferrer">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="external nofollow noopener noreferrer">Deployment</a></p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本篇簡單的整理一下型別的筆記。</p>
+<a id="more"></a>
+<h1 id="JavaScript-的型別"><a href="#JavaScript-的型別" class="headerlink" title="JavaScript 的型別"></a>JavaScript 的型別</h1><p>在 JavaScript 中分為兩種型別：</p>
+<ul>
+<li>原始型別</li>
+<li>物件型別</li>
+</ul>
+<h2 id="原始型別"><a href="#原始型別" class="headerlink" title="原始型別"></a>原始型別</h2><p>原始型別中又有六種，分別是以下：<br>string、number、boolean、null、undefined、symbol(ES6)<br>原始型別是沒有屬性的，所以也無法賦予屬性，我們來看看下面的例子：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">a.name = <span class="string">'111'</span>;</span><br><span class="line">a.name; <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure>
+<p>因為原始型別無法賦予屬性，所以這裡我們會得到 undefined 這個結果。</p>
+<p>另外，如果透過建構式的方式來宣告原始型別的話會導致型別轉換，請看下面這個範例：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Number</span>(<span class="number">1</span>); <span class="comment">//建構式</span></span><br><span class="line"><span class="keyword">typeof</span> a <span class="comment">// object</span></span><br></pre></td></tr></table></figure>
+<p>我們可以發現 <code>a</code> 的型別變成了物件，所以一般不建議用建構式的方式來宣告，這樣可能會導致後續判斷時發生錯誤。</p>
+<h2 id="物件型別"><a href="#物件型別" class="headerlink" title="物件型別"></a>物件型別</h2><p>除了上面的六種型別外，其他的都是物件型別，包含<strong>陣列</strong>及<strong>函式</strong>也都是物件型別。</p>
+<h1 id="動態型別"><a href="#動態型別" class="headerlink" title="動態型別"></a>動態型別</h1><p>JavaScript 屬於動態型別，也就是會根據使用狀況改變型別，我們看看下面的範例：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="string">'1'</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a) <span class="comment">// string</span></span><br><span class="line"></span><br><span class="line">a = +a;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a) <span class="comment">// number</span></span><br><span class="line"></span><br><span class="line">a = a + <span class="string">''</span>;</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a) <span class="comment">// string</span></span><br></pre></td></tr></table></figure>
+<p>可以看到同樣是 <code>a</code> 但是根據不同的狀況會從 <code>string</code> 變成 <code>number</code> 又變回 <code>string</code></p>
+<h1 id="參考"><a href="#參考" class="headerlink" title="參考"></a>參考</h1><p>參考資料：<br><a href="https://www.youtube.com/watch?v=s0qX9PgJlN4" target="_blank" rel="external nofollow noopener noreferrer">https://www.youtube.com/watch?v=s0qX9PgJlN4</a></p>
 
     </div>
 
@@ -216,17 +234,22 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag"># 前端</a>
+              <a href="/tags/%E7%AD%86%E8%A8%98/" rel="tag"># 筆記</a>
+              <a href="/tags/JS/" rel="tag"># JS</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2020/02/17/JavaScript-note/" rel="next" title="JS - JavaScript 觀念筆記">
-      JS - JavaScript 觀念筆記 <i class="fa fa-chevron-right"></i>
+    <a href="/2020/03/17/JS-hoisting/" rel="prev" title="JS - Hoisting 的觀念">
+      <i class="fa fa-chevron-left"></i> JS - Hoisting 的觀念
     </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -287,7 +310,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JavaScript-的型別"><span class="nav-number">2.</span> <span class="nav-text">JavaScript 的型別</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#原始型別"><span class="nav-number">2.1.</span> <span class="nav-text">原始型別</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#物件型別"><span class="nav-number">2.2.</span> <span class="nav-text">物件型別</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#動態型別"><span class="nav-number">3.</span> <span class="nav-text">動態型別</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#參考"><span class="nav-number">4.</span> <span class="nav-text">參考</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -413,7 +436,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'alivealife.github.io',
       owner       : 'alivealife',
       admin       : ['alivealife'],
-      id          : '3505cb05facf3a5b23f399140b41d7d2',
+      id          : '5bb85576e92a4dc746784949999d971c',
         language: 'zh-TW',
       distractionFreeMode: true
     });

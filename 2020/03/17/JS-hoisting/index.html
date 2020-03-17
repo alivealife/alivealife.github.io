@@ -28,7 +28,7 @@
 <meta property="og:description" content="前言本篇用來記錄自己所了解的 Hoisting 觀念">
 <meta property="og:locale" content="zh_TW">
 <meta property="article:published_time" content="2020-03-17T05:42:33.000Z">
-<meta property="article:modified_time" content="2020-03-17T06:12:05.072Z">
+<meta property="article:modified_time" content="2020-03-17T06:15:45.995Z">
 <meta property="article:author" content="Ian Hung">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="筆記">
@@ -185,7 +185,7 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2020-03-17 13:42:33 / 修改時間：14:12:05" itemprop="dateCreated datePublished" datetime="2020-03-17T13:42:33+08:00">2020-03-17</time>
+              <time title="創建時間：2020-03-17 13:42:33 / 修改時間：14:15:45" itemprop="dateCreated datePublished" datetime="2020-03-17T13:42:33+08:00">2020-03-17</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -220,7 +220,7 @@
 <p>這個範例實際執行後我們可以得到 undefined 這個結果，原因我們來看看下面的程式：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">實際執行時的狀況</span><br><span class="line"><span class="keyword">var</span> name</span><br><span class="line"><span class="built_in">console</span>.log(name); <span class="comment">// undefined</span></span><br><span class="line">name = <span class="string">'名字'</span>;</span><br></pre></td></tr></table></figure>
 <p>雖然變數會被提升，但是以本範例來說只提升了 <code>var name</code> 的部分，所以才會在呼叫時出現 undefined。</p>
-<h1 id="補充"><a href="#補充" class="headerlink" title="補充"></a>補充</h1><p>下面補充一些然容易搞錯的陷阱。<br>下面的範例執行後會得到 1 的結果，而原因就是雖然變數會被提升但不會先被賦值，所以這時候 a 還是 undefined，這會導致函式跳過 if 的判斷，所以答案還是 1。</p>
+<h1 id="補充"><a href="#補充" class="headerlink" title="補充"></a>補充</h1><p>下面補充一些容易搞錯的陷阱。<br>下面的範例執行後會得到 1 的結果，而原因就是雖然變數會被提升但不會先被賦值，所以這時候 a 還是 undefined，這會導致函式跳過 if 的判斷，所以答案還是 1。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">fn(); </span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">fn</span>(<span class="params"></span>) </span>&#123; </span><br><span class="line">  <span class="keyword">if</span> (a) &#123; </span><br><span class="line">    a = <span class="number">2</span>; </span><br><span class="line">  &#125;; </span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>; </span><br><span class="line"><span class="built_in">console</span>.log(a); <span class="comment">// 1</span></span><br></pre></td></tr></table></figure>
 
 <p>宣告的方式也會影響是否會被提升，我們來看看兩個例子：</p>
